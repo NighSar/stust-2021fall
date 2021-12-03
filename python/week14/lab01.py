@@ -1,16 +1,16 @@
-#----------------------------------------------------------
+# --- 前進 ---
 def forward(spd=150):
     return setWheels(spd, spd)
 
+# --- 旋轉左 ---
 def rotateR(spd=50):
     return setWheels(spd, 0)
 
+# --- 旋轉右 ---
 def rotateL(spd=50):
     return setWheels(0, spd)
 
-def stop():
-    return setWheels(0, 0)
-
+# --- 走迷宮演算法 ---
 def algorithm():
     global car
     if car.status != "GAME_ALIVE":
